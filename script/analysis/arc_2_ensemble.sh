@@ -1,0 +1,2 @@
+python analysis.py --output-root "VARC_predictions/ARC-2_ViT/attempt_0, VARC_predictions/ARC-2_ViT/attempt_1, VARC_predictions/ARC-2_ViT/attempt_2, VARC_predictions/ARC-2_ViT/attempt_3, VARC_predictions/ARC-2_Unet/attempt_0, VARC_predictions/ARC-2_Unet/attempt_1, VARC_predictions/ARC-2_Unet/attempt_2, VARC_predictions/ARC-2_Unet/attempt_3/" \
+ --html-output "arc_agi_2_ensemble.html" --task-type ARC-AGI-2

@@ -1,0 +1,22 @@
+torchrun --nproc_per_node=8 offline_train_ARC.py \
+  --epochs 100 \
+  --unet-size big \
+  --batch-size 32 \
+  --image-size 64 \
+  --patch-size 2 \
+  --learning-rate 3e-4 \
+  --weight-decay 0 \
+  --embed-dim 512 \
+  --include-rearc \
+  --num-colors 12 \
+  --data-root "raw_data/ARC-AGI" \
+  --train-split "training" \
+  --wandb-project "VisionARC" \
+  --wandb-run-name "offline_train_VARC" \
+  --save-path "saves/offline_train_Unet/checkpoint_final.pt" \
+  --best-save-path "saves/offline_train_Unet/checkpoint_best.pt" \
+  --lr-scheduler "cosine" \
+  --architecture "unet" \
+  --vis-every 50 \
+  --distributed \
+  --use-wandb \

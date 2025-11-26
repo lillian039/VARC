@@ -1,0 +1,1 @@
+python analysis.py --output-root VARC_predictions/ARC-2_ViT/attempt_0/ --html-output "arc_agi_2_vit.html" --task-type ARC-AGI-2
